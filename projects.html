@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <div class="nav-bar">
+            <button id="back-button" onclick="window.history.back()">Go Back</button> <!-- Back button -->
+        </div>
+    </header>
+    
+    <section id="projects">
+        <div class="projects container">
+            <h1 class="section-title">Projects</h1>
+            <div class="spacing"></div>
+            <div class="filter-container">
+                <label for="year">Year:</label>
+                <select id="year" onchange="filterProjects()">
+                    <option value="">Select Year</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+                <label for="type">Type:</label>
+                <select id="type" onchange="filterProjects()">
+                    <option value="">Select Type</option>
+                    <option value="Renovation">Renovation</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Interior Design">Interior Design</option>
+                </select>
+            </div>
+            <div class="project-items">
+                <div class="project-item" data-year="2024" data-type="Construction">
+                    <div class="project-info">
+                        <h1>Tacloban Project</h1>
+                        <h2>Description</h2>
+                        <p>2 storey Residential house located at JeborinVille, Tacloban City.</p>
+                        <p><strong>Year:</strong> 2024</p>
+                        <p><strong>Category:</strong> Construction</p>
+                        <p><strong>Budget:</strong> $200,000 - $300,000</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="project1.jpg" alt="Tacloban Project" onclick="showGallery('project1', 0)">
+                    </div>
+                </div>
+                <div class="project-item" data-year="2023" data-type="Renovation">
+                    <div class="project-info">
+                        <h1>Deca Homes Project</h1>
+                        <h2>Description</h2>
+                        <p>Renovations of single storey residential building.</p>
+                        <p><strong>Year:</strong> 2023</p>
+                        <p><strong>Category:</strong> Renovation</p>
+                        <p><strong>Budget:</strong> $75,000 - $150,000</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="project2.jpg" alt="Deca Homes Project" onclick="showGallery('project2', 0)">
+                    </div>
+                </div>
+                <div class="project-item" data-year="2023" data-type="Construction">
+                    <div class="project-info">
+                        <h1>Vergara Residences</h1>
+                        <h2>Description</h2>
+                        <p>Proposed Parking Lot and outdoor living.</p>
+                        <p><strong>Year:</strong> 2023</p>
+                        <p><strong>Category:</strong> Construction</p>
+                        <p><strong>Budget:</strong> $150,000 - $250,000</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="project3.jpg" alt="Vergara Residences" onclick="showGallery('project3', 0)">
+                    </div>
+                </div>
+                <div class="project-item" data-year="2022" data-type="Construction">
+                    <div class="project-info">
+                        <h1>Lotto Stall Project</h1>
+                        <h2>Description</h2>
+                        <p>Lotto outlet.</p>
+                        <p><strong>Year:</strong> 2022</p>
+                        <p><strong>Category:</strong> Construction</p>
+                        <p><strong>Budget:</strong> $25,000 - $50,000</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="project4.jpg" alt="Lotto Stall Project" onclick="showGallery('project4', 0)">
+                    </div>
+                </div>
+                <div class="project-item" data-year="2022" data-type="Renovation">
+                    <div class="project-info">
+                        <h1>Chinatown Project</h1>
+                        <h2>Description</h2>
+                        <p>Renovation of canal cover and driveway.</p>
+                        <p><strong>Year:</strong> 2022</p>
+                        <p><strong>Category:</strong> Renovation</p>
+                        <p><strong>Budget:</strong> $50,000 - $100,000</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="project5.jpg" alt="Chinatown Project" onclick="showGallery('project5', 0)">
+                    </div>
+                </div>
+                <div class="project-item" data-year="2024" data-type="Renovation">
+                    <div class="project-info">
+                        <h1>Deca Homes Project 2</h1>
+                        <h2>Description</h2>
+                        <p>Interior renovation of 2 storey residential bldg.</p>
+                        <p><strong>Year:</strong> 2024</p>
+                        <p><strong>Category:</strong> Renovation</p>
+                        <p><strong>Budget:</strong> N/A</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="project6.jfif" alt="Interior Design" onclick="showGallery('project6', 0)">
+                    </div>
+                </div>
+                <div class="project-item" data-year="2021" data-type="Interior Design">
+                    <div class="project-info">
+                        <h1>Camella Homes Project</h1>
+                        <h2>Description</h2>
+                        <p>Construction of 3 storey residential bldg.</p>
+                        <p><strong>Year:</strong> 2021</p>
+                        <p><strong>Category:</strong> Interior Design & Construction</p>
+                        <p><strong>Budget:</strong> N/A</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="project7.jfif" alt="Project 6" onclick="showGallery('project7', 0)">
+                    </div>
+                </div>
+                <div class="project-item" data-year="2023" data-type="Construction">
+                    <div class="project-info">
+                        <h1>Chinatown Kiosk</h1>
+                        <h2>Description</h2>
+                        <p>Construction of kiosk at chinatown mall</p>
+                        <p><strong>Year:</strong> 2023</p>
+                        <p><strong>Category:</strong> Construction</p>
+                        <p><strong>Budget:</strong> N/A</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="project8.jfif" alt="Chinatown Kiosk" onclick="showGallery('project8', 0)">
+                    </div>
+                </div>
+                <div class="project-item" data-year="2021" data-type="Construction">
+                    <div class="project-info">
+                        <h1>Global Dominion Finance</h1>
+                        <h2>Description</h2>
+                        <p>Construction of global dominion finance office</p>
+                        <p><strong>Year:</strong> 2021</p>
+                        <p><strong>Category:</strong> Construction</p>
+                        <p><strong>Budget:</strong> N/A</p>
+                    </div>
+                    <div class="project-img">
+                        <img src="project9.jfif" alt="Project 9" onclick="showGallery('project9', 0)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+
+    <div id="gallery-modal" style="display:none;">
+        <div class="gallery-content">
+            <img id="gallery-img" src="" alt="Gallery Image">
+            <img id="prev-image" class="side-image" src="" alt="Previous Image" onclick="prevPhoto()">
+            <img id="next-image" class="side-image" src="" alt="Next Image" onclick="nextPhoto()">
+            <button id="close-button" onclick="closeGallery()">✖</button>
+            <div id="gallery-buttons">
+                <button onclick="prevPhoto()" class="projects-button">Previous</button>
+                <button onclick="nextPhoto()" class="projects-button">Next</button>
+            </div>
+        </div>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
