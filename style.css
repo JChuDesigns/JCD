@@ -561,6 +561,35 @@ p {
 }
 /* End Footer */
 
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0; /* Add some vertical spacing */
+}
+
+.projects-button {
+    display: inline-block;
+    padding: 20px 40px; /* Increase size */
+    font-size: 2.5rem; /* Larger font size */
+    color: #000;
+    background-color: #d8dddf;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0px 0px 18px 0 #000000;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: -80px; /* Adjust margin to lift the button */
+}
+
+
+.projects-button:hover {
+    background-color: #c0c4c4;
+    box-shadow: 0px 0px 5px 0 #000000;
+}
+
+
+
 /* Keyframes */
 @keyframes hamburger_puls {
 	0% {
