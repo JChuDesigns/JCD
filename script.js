@@ -5,7 +5,7 @@ const projectGalleries = {
     project4: ['project4_1.jpg'], // Lotto Stall Project
     project5: ['project5_1.jpg', 'project5_2.jpg'], // Chinatown Project
     project6: ['pro6a.jpg', 'pro6b.jpg', 'pro6c.jpg', 'pro6d.jpg', 'pro6e.jfif'], // Project 6
-    project7: ['pro7a.jpg', 'pro7b.jpg', 'pro7c.jpg'], // Project 7
+    project7: ['pro7a.jpg', 'pro7b.jpg', 'pro7c.jpg' , 'pro7d.jpg' ], // Project 7
     project8: ['pro8a.jfif', 'pro8b.jfif'], // Project 8
     project9: ['pro9a.jfif', 'pro9b.jfif', 'pro9c.jfif'], // Project 9
 };
