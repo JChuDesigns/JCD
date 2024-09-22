@@ -80,6 +80,7 @@ header nav a:hover {
 }
 
 /* Filter Container */
+/* Filter Container */
 .filter-container {
     display: flex;
     justify-content: center;
@@ -89,11 +90,23 @@ header nav a:hover {
 
 .filter-container label {
     font-size: 1.8rem; /* Increased size */
+    color: black;      /* Match text color */
+    text-transform: uppercase; /* Consistent styling */
+    letter-spacing: 0.1rem; /* Spacing for uniformity */
 }
 
 .filter-container select {
     font-size: 1.8rem; /* Increased size */
-    padding: 5px;
+    padding: 10px;     /* More padding for comfort */
+    border: 2px solid #333; /* Dark border for contrast */
+    border-radius: 10px; /* Consistent rounded corners */
+    background-color: #d8dddf; /* Match background color */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.filter-container select:hover {
+    background-color: #c0c4c4; /* Change background on hover */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
 }
 
 /* Projects Section */
